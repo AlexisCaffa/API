@@ -119,9 +119,9 @@ JSON {
 		// replace null with nil
 		nullIdxs = newString.findAll("null");
 		nullIdxs.do{|idx|
-			idxs.any{|pairs| idx.inRange(*pairs)}.if({
+			//idxs.any{|pairs| idx.inRange(*pairs)}.if({
 				newString.overWrite("nil ", idx);
-			})
+			//})
 
 		};
 
